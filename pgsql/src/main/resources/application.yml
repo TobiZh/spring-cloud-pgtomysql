@@ -1,0 +1,15 @@
+
+
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://115.29.163.237:5432/vlkdj?currentSchema=meta&useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
+    username: vlkdj
+    password: weiling@qinghai118
+    driver-class-name: org.postgresql.Driver
+  application:
+    name: spring-cloud-pgsql
+  cloud:
+    nacos:
+      server-addr: localhost:8848
