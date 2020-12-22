@@ -28,11 +28,11 @@ public class Meta_teleplay_character extends Model<Meta_teleplay_character> {
 
     private Integer weight;
 
-    private Integer character_id;
+    private Integer characterId;
 
-    private Integer teleplay_id;
+    private Integer teleplayId;
 
-    private Integer person_id;
+    private Integer personId;
 
     private Date created;
 

@@ -24,7 +24,7 @@ public class Zy_buluo extends Model<Zy_buluo> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "zy_id", type = IdType.AUTO)
-    private Integer zy_id;
+    private Integer zyId;
 
     private String title;
 
@@ -32,7 +32,7 @@ public class Zy_buluo extends Model<Zy_buluo> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 
@@ -41,7 +41,7 @@ public class Zy_buluo extends Model<Zy_buluo> {
 
     @Override
     protected Serializable pkVal() {
-        return this.zy_id;
+        return this.zyId;
     }
 
 }

@@ -30,35 +30,35 @@ public class Zy extends Model<Zy> {
 
     private String description;
 
-    private Date first_play_date;
+    private Date firstPlayDate;
 
-    private Date play_time;
+    private Date playTime;
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_complete;
+    private Boolean isComplete;
 
-    private Integer frequency_id;
+    private Integer frequencyId;
 
-    private Integer media_id;
+    private Integer mediaId;
 
-    private String is_search;
+    private Boolean isSearch;
 
     private String top100;
 
-    private String list_img;
+    private String listImg;
 
-    private Integer category_id;
+    private Integer categoryId;
 
-    private Integer country_id;
+    private Integer countryId;
 
-    private Integer lifecycle_id;
+    private Integer lifecycleId;
 
-    private Integer type_id;
+    private Integer typeId;
 
-    private String search_keyword;
+    private String searchKeyword;
 
     private String memo;
 

@@ -30,15 +30,15 @@ public class Meta_movie_maoyan extends Model<Meta_movie_maoyan> {
 
     private String url;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private String uid;
 
     private Date updated;
 
-    private Integer movie_id;
+    private Integer movieId;
 
-    private Integer spider_id;
+    private Integer spiderId;
 
     private Date created;
 

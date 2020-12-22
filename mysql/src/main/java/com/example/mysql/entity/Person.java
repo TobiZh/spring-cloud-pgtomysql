@@ -26,15 +26,15 @@ public class Person extends Model<Person> {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String zh_name;
+    private String zhName;
 
     private Integer sex;
 
     private String description;
 
-    private String pinyin_name;
+    private String pinyinName;
 
-    private String en_name;
+    private String enName;
 
     private String alias;
 
@@ -46,39 +46,39 @@ public class Person extends Model<Person> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_complete;
+    private Boolean isComplete;
 
-    private String is_writer;
+    private Boolean isWriter;
 
-    private String is_director;
+    private Boolean isDirector;
 
-    private String is_performer;
+    private Boolean isPerformer;
 
-    private String is_producer;
+    private Boolean isProducer;
 
-    private String is_exeproducer;
+    private Boolean isExeproducer;
 
-    private String is_station;
+    private Boolean isStation;
 
-    private Integer panel_sum;
+    private Integer panelSum;
 
     private Integer status;
 
-    private String has_avatar;
+    private Boolean hasAvatar;
 
     private String character;
 
     private String avatar;
 
-    private Integer country_id;
+    private Integer countryId;
 
     private String memo;
 
-    private String avatar_custom;
+    private String avatarCustom;
 
-    private String is_xunyee_check;
+    private Boolean isXunyeeCheck;
 
     private Date created;
 

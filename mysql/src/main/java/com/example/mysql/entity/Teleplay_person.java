@@ -28,13 +28,13 @@ public class Teleplay_person extends Model<Teleplay_person> {
 
     private Integer weight;
 
-    private Integer credit_id;
+    private Integer creditId;
 
-    private Integer person_id;
+    private Integer personId;
 
-    private Integer teleplay_id;
+    private Integer teleplayId;
 
-    private Integer character_id;
+    private Integer characterId;
 
     private Date created;
 

@@ -28,15 +28,15 @@ public class Zy_person extends Model<Zy_person> {
 
     private Integer weight;
 
-    private Date start_time;
+    private Date startTime;
 
-    private Date finish_time;
+    private Date finishTime;
 
-    private Integer credit_id;
+    private Integer creditId;
 
-    private Integer person_id;
+    private Integer personId;
 
-    private Integer zy_id;
+    private Integer zyId;
 
     private Date created;
 

@@ -30,15 +30,15 @@ public class Teleplay extends Model<Teleplay> {
 
     private String alias;
 
-    private String sartf_title;
+    private String sartfTitle;
 
-    private Date tv_first_play_date;
+    private Date tvFirstPlayDate;
 
-    private String tv_first_play_date_wait;
+    private Boolean tvFirstPlayDateWait;
 
-    private Date net_first_play_date;
+    private Date netFirstPlayDate;
 
-    private Integer episode_nums;
+    private Integer episodeNums;
 
     private Integer runtime;
 
@@ -46,29 +46,29 @@ public class Teleplay extends Model<Teleplay> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_dig;
+    private Boolean isDig;
 
-    private String is_published;
+    private Boolean isPublished;
 
-    private String is_complete;
+    private Boolean isComplete;
 
-    private String has_cover;
+    private Boolean hasCover;
 
-    private Integer category_id;
+    private Integer categoryId;
 
-    private Integer country_id;
+    private Integer countryId;
 
-    private Integer language_id;
+    private Integer languageId;
 
-    private Integer lifecycle_id;
+    private Integer lifecycleId;
 
-    private String search_keyword;
+    private String searchKeyword;
 
-    private Date net_last_play_date;
+    private Date netLastPlayDate;
 
-    private Date tv_last_play_date;
+    private Date tvLastPlayDate;
 
     private String memo;
 

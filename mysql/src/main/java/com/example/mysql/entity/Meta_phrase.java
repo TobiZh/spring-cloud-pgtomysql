@@ -28,15 +28,15 @@ public class Meta_phrase extends Model<Meta_phrase> {
 
     private String name;
 
-    private String name_en;
+    private String nameEn;
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Integer weight;
 
-    private Integer tag_category_id;
+    private Integer tagCategoryId;
 
     private Date created;
 

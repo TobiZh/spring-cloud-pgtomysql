@@ -28,13 +28,13 @@ public class Meta_zy_sotrend extends Model<Meta_zy_sotrend> {
 
     private String keyword;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date updated;
 
-    private Integer spider_id;
+    private Integer spiderId;
 
-    private Integer zy_id;
+    private Integer zyId;
 
     private Date created;
 

@@ -30,13 +30,13 @@ public class Movie extends Model<Movie> {
 
     private String alias;
 
-    private String sartf_title;
+    private String sartfTitle;
 
-    private Date released_date;
+    private Date releasedDate;
 
-    private String released_date_wait;
+    private Boolean releasedDateWait;
 
-    private Integer box_office;
+    private Integer boxOffice;
 
     private Integer runtime;
 
@@ -44,21 +44,21 @@ public class Movie extends Model<Movie> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_dig;
+    private Boolean isDig;
 
-    private String is_published;
+    private Boolean isPublished;
 
-    private String is_complete;
+    private Boolean isComplete;
 
-    private String data_from;
+    private String dataFrom;
 
-    private Integer country_id;
+    private Integer countryId;
 
-    private Integer language_id;
+    private Integer languageId;
 
-    private Integer lifecycle_id;
+    private Integer lifecycleId;
 
     private String memo;
 

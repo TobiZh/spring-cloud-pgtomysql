@@ -28,11 +28,11 @@ public class Meta_teleplay_prdhouse extends Model<Meta_teleplay_prdhouse> {
 
     private Integer weight;
 
-    private Integer credit_id;
+    private Integer creditId;
 
-    private Integer prdhouse_id;
+    private Integer prdhouseId;
 
-    private Integer teleplay_id;
+    private Integer teleplayId;
 
     private Date created;
 

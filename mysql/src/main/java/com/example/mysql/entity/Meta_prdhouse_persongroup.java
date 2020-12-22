@@ -26,17 +26,17 @@ public class Meta_prdhouse_persongroup extends Model<Meta_prdhouse_persongroup> 
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    private Date start_time;
+    private Date startTime;
 
-    private Date finish_time;
+    private Date finishTime;
 
     private Integer weight;
 
-    private Integer credit_id;
+    private Integer creditId;
 
-    private Integer persongroup_id;
+    private Integer persongroupId;
 
-    private Integer prdhouse_id;
+    private Integer prdhouseId;
 
     private Date created;
 

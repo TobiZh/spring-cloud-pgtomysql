@@ -30,29 +30,29 @@ public class Teleplay_site extends Model<Teleplay_site> {
 
     private String uid;
 
-    private String show_url;
+    private String showUrl;
 
-    private String num_url;
+    private String numUrl;
 
-    private String is_fullepi;
+    private Boolean isFullepi;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 
     private Date updated;
 
-    private String crawled_info;
+    private String crawledInfo;
 
-    private String is_min_id;
+    private Boolean isMinId;
 
-    private String spider_status;
+    private Boolean spiderStatus;
 
-    private Integer site_id;
+    private Integer siteId;
 
-    private Integer spider_id;
+    private Integer spiderId;
 
-    private Integer teleplay_id;
+    private Integer teleplayId;
 
 
     @Override

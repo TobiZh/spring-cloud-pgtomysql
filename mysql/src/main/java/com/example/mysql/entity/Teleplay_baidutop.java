@@ -28,19 +28,19 @@ public class Teleplay_baidutop extends Model<Teleplay_baidutop> {
 
     private String keyword;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private String trend;
 
-    private Integer search_num;
+    private Integer searchNum;
 
     private Date created;
 
     private Date updated;
 
-    private Integer spider_id;
+    private Integer spiderId;
 
-    private Integer teleplay_id;
+    private Integer teleplayId;
 
 
     @Override

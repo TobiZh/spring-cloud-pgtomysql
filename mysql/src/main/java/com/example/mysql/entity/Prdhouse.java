@@ -36,7 +36,7 @@ public class Prdhouse extends Model<Prdhouse> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private String memo;
 

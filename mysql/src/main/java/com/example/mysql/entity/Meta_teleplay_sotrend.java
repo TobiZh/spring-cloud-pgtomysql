@@ -28,13 +28,13 @@ public class Meta_teleplay_sotrend extends Model<Meta_teleplay_sotrend> {
 
     private String keyword;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date updated;
 
-    private Integer spider_id;
+    private Integer spiderId;
 
-    private Integer teleplay_id;
+    private Integer teleplayId;
 
     private Date created;
 

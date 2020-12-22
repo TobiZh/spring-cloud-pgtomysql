@@ -30,25 +30,25 @@ public class Movie_site extends Model<Movie_site> {
 
     private String uid;
 
-    private String show_url;
+    private String showUrl;
 
-    private String num_url;
+    private String numUrl;
 
-    private String is_fullepi;
+    private Boolean isFullepi;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 
     private Date updated;
 
-    private String crawled_info;
+    private String crawledInfo;
 
-    private Integer movie_id;
+    private Integer movieId;
 
-    private Integer site_id;
+    private Integer siteId;
 
-    private Integer spider_id;
+    private Integer spiderId;
 
 
     @Override

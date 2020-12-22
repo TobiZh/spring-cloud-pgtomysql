@@ -24,7 +24,7 @@ public class Teleplay_tieba extends Model<Teleplay_tieba> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "teleplay_id", type = IdType.AUTO)
-    private Integer teleplay_id;
+    private Integer teleplayId;
 
     private String title;
 
@@ -32,21 +32,21 @@ public class Teleplay_tieba extends Model<Teleplay_tieba> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Integer sum;
 
-    private Integer post_sum;
+    private Integer postSum;
 
-    private Integer subject_sum;
+    private Integer subjectSum;
 
-    private Integer member_sum;
+    private Integer memberSum;
 
-    private Integer check_sum;
+    private Integer checkSum;
 
-    private Date spider_date;
+    private Date spiderDate;
 
-    private Integer grab_time;
+    private Integer grabTime;
 
     private Date created;
 
@@ -55,7 +55,7 @@ public class Teleplay_tieba extends Model<Teleplay_tieba> {
 
     @Override
     protected Serializable pkVal() {
-        return this.teleplay_id;
+        return this.teleplayId;
     }
 
 }

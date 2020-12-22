@@ -30,7 +30,7 @@ public class Zycategory extends Model<Zycategory> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 

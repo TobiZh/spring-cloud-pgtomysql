@@ -28,11 +28,11 @@ public class Meta_movie_prdhouse extends Model<Meta_movie_prdhouse> {
 
     private Integer weight;
 
-    private Integer credit_id;
+    private Integer creditId;
 
-    private Integer movie_id;
+    private Integer movieId;
 
-    private Integer prdhouse_id;
+    private Integer prdhouseId;
 
     private Date created;
 

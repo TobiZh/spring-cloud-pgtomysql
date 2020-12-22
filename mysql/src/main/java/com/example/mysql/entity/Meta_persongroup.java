@@ -34,9 +34,9 @@ public class Meta_persongroup extends Model<Meta_persongroup> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_complete;
+    private Boolean isComplete;
 
     private Date created;
 

@@ -34,9 +34,9 @@ public class Meta_character extends Model<Meta_character> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_complete;
+    private Boolean isComplete;
 
     private String memo;
 

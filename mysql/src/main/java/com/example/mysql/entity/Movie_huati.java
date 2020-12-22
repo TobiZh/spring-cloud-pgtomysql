@@ -28,13 +28,13 @@ public class Movie_huati extends Model<Movie_huati> {
 
     private Integer weight;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_exclusive;
+    private Boolean isExclusive;
 
-    private Integer huati_id;
+    private Integer huatiId;
 
-    private Integer movie_id;
+    private Integer movieId;
 
     private Date created;
 

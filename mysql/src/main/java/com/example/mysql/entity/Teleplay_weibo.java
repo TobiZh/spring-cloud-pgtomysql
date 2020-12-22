@@ -24,7 +24,7 @@ public class Teleplay_weibo extends Model<Teleplay_weibo> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "teleplay_id", type = IdType.AUTO)
-    private Integer teleplay_id;
+    private Integer teleplayId;
 
     private String title;
 
@@ -32,30 +32,30 @@ public class Teleplay_weibo extends Model<Teleplay_weibo> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_login;
+    private Boolean isLogin;
 
     private Integer sum;
 
-    private Integer post_sum;
+    private Integer postSum;
 
-    private Date spider_date;
+    private Date spiderDate;
 
-    private Integer grab_time;
+    private Integer grabTime;
 
     private Date updated;
 
     private String type;
 
-    private String is_crawled;
+    private Boolean isCrawled;
 
     private Date created;
 
 
     @Override
     protected Serializable pkVal() {
-        return this.teleplay_id;
+        return this.teleplayId;
     }
 
 }

@@ -30,11 +30,11 @@ public class Product extends Model<Product> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private String description;
 
-    private Integer brand_id;
+    private Integer brandId;
 
     private Date created;
 

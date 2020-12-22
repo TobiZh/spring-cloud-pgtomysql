@@ -30,15 +30,15 @@ public class Meta_musicalbum extends Model<Meta_musicalbum> {
 
     private String memo;
 
-    private Date release_time;
+    private Date releaseTime;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_complete;
+    private Boolean isComplete;
 
     private Integer orderby;
 
-    private Integer language_id;
+    private Integer languageId;
 
     private Date created;
 

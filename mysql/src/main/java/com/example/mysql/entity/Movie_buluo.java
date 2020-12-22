@@ -24,7 +24,7 @@ public class Movie_buluo extends Model<Movie_buluo> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "movie_id", type = IdType.AUTO)
-    private Integer movie_id;
+    private Integer movieId;
 
     private String title;
 
@@ -32,7 +32,7 @@ public class Movie_buluo extends Model<Movie_buluo> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 
@@ -41,7 +41,7 @@ public class Movie_buluo extends Model<Movie_buluo> {
 
     @Override
     protected Serializable pkVal() {
-        return this.movie_id;
+        return this.movieId;
     }
 
 }

@@ -24,7 +24,7 @@ public class Person_weibo extends Model<Person_weibo> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "person_id", type = IdType.AUTO)
-    private Integer person_id;
+    private Integer personId;
 
     private String title;
 
@@ -32,17 +32,17 @@ public class Person_weibo extends Model<Person_weibo> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_login;
+    private Boolean isLogin;
 
     private Integer sum;
 
-    private Integer post_sum;
+    private Integer postSum;
 
-    private Date spider_date;
+    private Date spiderDate;
 
-    private Integer grab_time;
+    private Integer grabTime;
 
     private Date updated;
 
@@ -51,7 +51,7 @@ public class Person_weibo extends Model<Person_weibo> {
 
     @Override
     protected Serializable pkVal() {
-        return this.person_id;
+        return this.personId;
     }
 
 }

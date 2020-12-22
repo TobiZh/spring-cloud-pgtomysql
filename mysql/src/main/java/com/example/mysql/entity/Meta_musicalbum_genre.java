@@ -25,9 +25,9 @@ public class Meta_musicalbum_genre extends Model<Meta_musicalbum_genre> {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private Integer musicalbum_id;
+    private Integer musicalbumId;
 
-    private Integer musicgenre_id;
+    private Integer musicgenreId;
 
 
     @Override

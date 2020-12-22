@@ -30,7 +30,7 @@ public class Meta_trade extends Model<Meta_trade> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 

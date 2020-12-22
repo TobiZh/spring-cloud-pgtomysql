@@ -30,13 +30,13 @@ public class Meta_brand_site extends Model<Meta_brand_site> {
 
     private String url;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private String uid;
 
-    private Integer brand_id;
+    private Integer brandId;
 
-    private Integer site_id;
+    private Integer siteId;
 
     private Date created;
 

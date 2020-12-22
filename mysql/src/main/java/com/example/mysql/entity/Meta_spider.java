@@ -30,9 +30,9 @@ public class Meta_spider extends Model<Meta_spider> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private Integer author_user;
+    private Integer authorUser;
 
     private String comment;
 

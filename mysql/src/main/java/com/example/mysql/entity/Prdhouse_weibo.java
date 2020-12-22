@@ -24,7 +24,7 @@ public class Prdhouse_weibo extends Model<Prdhouse_weibo> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "prdhouse_id", type = IdType.AUTO)
-    private Integer prdhouse_id;
+    private Integer prdhouseId;
 
     private String title;
 
@@ -32,17 +32,17 @@ public class Prdhouse_weibo extends Model<Prdhouse_weibo> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_login;
+    private Boolean isLogin;
 
     private Integer sum;
 
-    private Integer post_sum;
+    private Integer postSum;
 
-    private Date spider_date;
+    private Date spiderDate;
 
-    private Integer grab_time;
+    private Integer grabTime;
 
     private Date updated;
 
@@ -53,7 +53,7 @@ public class Prdhouse_weibo extends Model<Prdhouse_weibo> {
 
     @Override
     protected Serializable pkVal() {
-        return this.prdhouse_id;
+        return this.prdhouseId;
     }
 
 }

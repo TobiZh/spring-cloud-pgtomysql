@@ -28,13 +28,13 @@ public class Teleplay_huati extends Model<Teleplay_huati> {
 
     private Integer weight;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_exclusive;
+    private Boolean isExclusive;
 
-    private Integer huati_id;
+    private Integer huatiId;
 
-    private Integer teleplay_id;
+    private Integer teleplayId;
 
     private Date created;
 

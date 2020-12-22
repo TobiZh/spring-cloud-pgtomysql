@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -24,7 +25,7 @@ public class Movie_douban extends Model<Movie_douban> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "movie_id", type = IdType.AUTO)
-    private Integer movie_id;
+    private Integer movieId;
 
     private String title;
 
@@ -32,21 +33,21 @@ public class Movie_douban extends Model<Movie_douban> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String score;
+    private BigDecimal score;
 
-    private Integer short_comment;
+    private Integer shortComment;
 
-    private Integer film_comment;
+    private Integer filmComment;
 
-    private Integer comment_nums;
+    private Integer commentNums;
 
     private String imdb;
 
-    private Date spider_date;
+    private Date spiderDate;
 
-    private Integer grab_time;
+    private Integer grabTime;
 
     private Date updated;
 
@@ -55,7 +56,7 @@ public class Movie_douban extends Model<Movie_douban> {
 
     @Override
     protected Serializable pkVal() {
-        return this.movie_id;
+        return this.movieId;
     }
 
 }

@@ -25,9 +25,9 @@ public class Brand_trade extends Model<Brand_trade> {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private Integer brand_id;
+    private Integer brandId;
 
-    private Integer trade_id;
+    private Integer tradeId;
 
 
     @Override

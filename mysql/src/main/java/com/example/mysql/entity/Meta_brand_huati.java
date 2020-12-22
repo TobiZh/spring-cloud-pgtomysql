@@ -28,13 +28,13 @@ public class Meta_brand_huati extends Model<Meta_brand_huati> {
 
     private Integer weight;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_exclusive;
+    private Boolean isExclusive;
 
-    private Integer brand_id;
+    private Integer brandId;
 
-    private Integer huati_id;
+    private Integer huatiId;
 
     private Date created;
 

@@ -28,11 +28,11 @@ public class Meta_musicalbum_person extends Model<Meta_musicalbum_person> {
 
     private Integer weight;
 
-    private Integer credit_id;
+    private Integer creditId;
 
-    private Integer musicalbum_id;
+    private Integer musicalbumId;
 
-    private Integer person_id;
+    private Integer personId;
 
     private Date created;
 

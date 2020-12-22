@@ -28,13 +28,13 @@ public class Zy_huati extends Model<Zy_huati> {
 
     private Integer weight;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_exclusive;
+    private Boolean isExclusive;
 
-    private Integer huati_id;
+    private Integer huatiId;
 
-    private Integer zy_id;
+    private Integer zyId;
 
     private Date created;
 

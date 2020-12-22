@@ -28,11 +28,11 @@ public class Meta_music_prdhouse extends Model<Meta_music_prdhouse> {
 
     private Integer weight;
 
-    private Integer credit_id;
+    private Integer creditId;
 
-    private Integer music_id;
+    private Integer musicId;
 
-    private Integer prdhouse_id;
+    private Integer prdhouseId;
 
     private Date created;
 

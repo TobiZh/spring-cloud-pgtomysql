@@ -30,7 +30,7 @@ public class Meta_musicgenre extends Model<Meta_musicgenre> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 

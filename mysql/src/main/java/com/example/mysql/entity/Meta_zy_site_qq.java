@@ -28,23 +28,23 @@ public class Meta_zy_site_qq extends Model<Meta_zy_site_qq> {
 
     private String title;
 
-    private Integer episode_no;
+    private Integer episodeNo;
 
-    private Date episode_time;
+    private Date episodeTime;
 
     private String uid;
 
-    private String show_url;
+    private String showUrl;
 
-    private String num_url;
+    private String numUrl;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date updated;
 
-    private Integer spider_id;
+    private Integer spiderId;
 
-    private Long zy_site_id;
+    private Long zySiteId;
 
     private Date created;
 

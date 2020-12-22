@@ -28,13 +28,13 @@ public class Person_huati extends Model<Person_huati> {
 
     private Integer weight;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private String is_exclusive;
+    private Boolean isExclusive;
 
-    private Integer huati_id;
+    private Integer huatiId;
 
-    private Integer person_id;
+    private Integer personId;
 
     private Date created;
 

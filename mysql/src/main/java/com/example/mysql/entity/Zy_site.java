@@ -30,25 +30,25 @@ public class Zy_site extends Model<Zy_site> {
 
     private String uid;
 
-    private String show_url;
+    private String showUrl;
 
-    private String num_url;
+    private String numUrl;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 
     private Date updated;
 
-    private String http_status;
+    private String httpStatus;
 
-    private String meiju;
+    private Boolean meiju;
 
-    private Integer site_id;
+    private Integer siteId;
 
-    private Integer spider_id;
+    private Integer spiderId;
 
-    private Integer zy_id;
+    private Integer zyId;
 
 
     @Override

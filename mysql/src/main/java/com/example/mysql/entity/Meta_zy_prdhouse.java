@@ -28,11 +28,11 @@ public class Meta_zy_prdhouse extends Model<Meta_zy_prdhouse> {
 
     private Integer weight;
 
-    private Integer credit_id;
+    private Integer creditId;
 
-    private Integer prdhouse_id;
+    private Integer prdhouseId;
 
-    private Integer zy_id;
+    private Integer zyId;
 
     private Date created;
 

@@ -25,9 +25,9 @@ public class Teleplay_subject extends Model<Teleplay_subject> {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private Integer teleplay_id;
+    private Integer teleplayId;
 
-    private Integer teleplaysubject_id;
+    private Integer teleplaysubjectId;
 
 
     @Override

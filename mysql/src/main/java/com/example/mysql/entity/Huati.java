@@ -32,7 +32,7 @@ public class Huati extends Model<Huati> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private String memo;
 

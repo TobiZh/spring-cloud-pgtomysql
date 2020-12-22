@@ -30,11 +30,11 @@ public class Meta_lifecycle extends Model<Meta_lifecycle> {
 
     private Integer orderby;
 
-    private String is_enabled_movie;
+    private Boolean isEnabledMovie;
 
-    private String is_enabled_teleplay;
+    private Boolean isEnabledTeleplay;
 
-    private String is_enabled_zy;
+    private Boolean isEnabledZy;
 
     private Date created;
 

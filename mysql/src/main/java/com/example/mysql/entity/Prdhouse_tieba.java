@@ -24,7 +24,7 @@ public class Prdhouse_tieba extends Model<Prdhouse_tieba> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "prdhouse_id", type = IdType.AUTO)
-    private Integer prdhouse_id;
+    private Integer prdhouseId;
 
     private String title;
 
@@ -32,21 +32,21 @@ public class Prdhouse_tieba extends Model<Prdhouse_tieba> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Integer sum;
 
-    private Integer post_sum;
+    private Integer postSum;
 
-    private Integer subject_sum;
+    private Integer subjectSum;
 
-    private Integer member_sum;
+    private Integer memberSum;
 
-    private Integer check_sum;
+    private Integer checkSum;
 
-    private Date spider_date;
+    private Date spiderDate;
 
-    private Integer grab_time;
+    private Integer grabTime;
 
     private Date created;
 
@@ -55,7 +55,7 @@ public class Prdhouse_tieba extends Model<Prdhouse_tieba> {
 
     @Override
     protected Serializable pkVal() {
-        return this.prdhouse_id;
+        return this.prdhouseId;
     }
 
 }

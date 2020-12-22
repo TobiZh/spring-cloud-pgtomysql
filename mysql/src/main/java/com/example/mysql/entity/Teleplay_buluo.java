@@ -24,7 +24,7 @@ public class Teleplay_buluo extends Model<Teleplay_buluo> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "teleplay_id", type = IdType.AUTO)
-    private Integer teleplay_id;
+    private Integer teleplayId;
 
     private String title;
 
@@ -32,7 +32,7 @@ public class Teleplay_buluo extends Model<Teleplay_buluo> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 
@@ -41,7 +41,7 @@ public class Teleplay_buluo extends Model<Teleplay_buluo> {
 
     @Override
     protected Serializable pkVal() {
-        return this.teleplay_id;
+        return this.teleplayId;
     }
 
 }

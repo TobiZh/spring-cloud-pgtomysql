@@ -30,7 +30,7 @@ public class Language extends Model<Language> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 

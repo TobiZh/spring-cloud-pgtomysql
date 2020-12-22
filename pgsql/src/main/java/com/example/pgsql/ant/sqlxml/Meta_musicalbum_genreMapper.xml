@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.pgsql.ant.mapper.Meta_musicalbum_genreMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.pgsql.ant.entity.Meta_musicalbum_genre">
+        <id column="id" property="id" />
+        <result column="musicalbum_id" property="musicalbumId" />
+        <result column="musicgenre_id" property="musicgenreId" />
+    </resultMap>
+
+</mapper>

@@ -40,13 +40,14 @@ public class PgsqlGenerator {
         dsc.setUsername("vlkdj");
         dsc.setPassword("weiling@qinghai118");
         dsc.setSchemaName("meta");
-        dsc.setUrl("jdbc:postgresql://115.29.163.237:5432/vlkdj?tinyInt1isBit=false&useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8");
+        dsc.setUrl("jdbc:postgresql://115.29.163.237:5432/vlkdj?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8");
         mpg.setDataSource(dsc);
 
 
         // 策略配置
         StrategyConfig strategy = new StrategyConfig();
-//        strategy.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
+        strategy.setNaming(NamingStrategy.no_change);// 表名生成策略
+        strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         strategy.setEntityLombokModel(true);
         mpg.setStrategy(strategy);
 

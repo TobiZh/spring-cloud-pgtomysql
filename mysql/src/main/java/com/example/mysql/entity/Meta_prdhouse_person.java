@@ -28,15 +28,15 @@ public class Meta_prdhouse_person extends Model<Meta_prdhouse_person> {
 
     private Integer weight;
 
-    private Integer credit_id;
+    private Integer creditId;
 
-    private Integer person_id;
+    private Integer personId;
 
-    private Integer prdhouse_id;
+    private Integer prdhouseId;
 
-    private Date finish_time;
+    private Date finishTime;
 
-    private Date start_time;
+    private Date startTime;
 
     private Date created;
 

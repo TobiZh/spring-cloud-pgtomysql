@@ -24,7 +24,7 @@ public class Person_buluo extends Model<Person_buluo> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "person_id", type = IdType.AUTO)
-    private Integer person_id;
+    private Integer personId;
 
     private String title;
 
@@ -32,15 +32,15 @@ public class Person_buluo extends Model<Person_buluo> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private Integer fans_num;
+    private Integer fansNum;
 
-    private Integer subject_num;
+    private Integer subjectNum;
 
-    private Date spider_date;
+    private Date spiderDate;
 
-    private String grab_status;
+    private Boolean grabStatus;
 
     private Date updated;
 
@@ -49,7 +49,7 @@ public class Person_buluo extends Model<Person_buluo> {
 
     @Override
     protected Serializable pkVal() {
-        return this.person_id;
+        return this.personId;
     }
 
 }

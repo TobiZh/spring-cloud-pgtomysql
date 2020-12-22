@@ -30,33 +30,33 @@ public class Meta_credit extends Model<Meta_credit> {
 
     private Integer orderby;
 
-    private String is_enabled_movie;
+    private Boolean isEnabledMovie;
 
-    private String is_enabled_teleplay;
+    private Boolean isEnabledTeleplay;
 
-    private String is_enabled_zy;
+    private Boolean isEnabledZy;
 
-    private String is_enabled_brand;
+    private Boolean isEnabledBrand;
 
-    private String is_enabled_person_prdhouse;
+    private Boolean isEnabledPersonPrdhouse;
 
-    private String is_enabled_prdhouse_brand;
+    private Boolean isEnabledPrdhouseBrand;
 
-    private String is_enabled_prdhouse_movie;
+    private Boolean isEnabledPrdhouseMovie;
 
-    private String is_enabled_prdhouse_teleplay;
+    private Boolean isEnabledPrdhouseTeleplay;
 
-    private String is_enabled_prdhouse_zy;
+    private Boolean isEnabledPrdhouseZy;
 
-    private String is_enabled_music;
+    private Boolean isEnabledMusic;
 
-    private String is_enabled_musicalbum;
+    private Boolean isEnabledMusicalbum;
 
-    private String is_enabled_persongroup_prdhouse;
+    private Boolean isEnabledPersongroupPrdhouse;
 
-    private String is_enabled_prdhouse_music;
+    private Boolean isEnabledPrdhouseMusic;
 
-    private String is_enabled_prdhouse_musicalbum;
+    private Boolean isEnabledPrdhouseMusicalbum;
 
     private Date created;
 

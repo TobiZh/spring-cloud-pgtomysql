@@ -28,11 +28,11 @@ public class Meta_movie_character extends Model<Meta_movie_character> {
 
     private Integer weight;
 
-    private Integer character_id;
+    private Integer characterId;
 
-    private Integer movie_id;
+    private Integer movieId;
 
-    private Integer person_id;
+    private Integer personId;
 
     private Date created;
 

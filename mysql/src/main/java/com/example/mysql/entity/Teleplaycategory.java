@@ -30,7 +30,7 @@ public class Teleplaycategory extends Model<Teleplaycategory> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 

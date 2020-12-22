@@ -30,9 +30,9 @@ public class Meta_musicalbum_music extends Model<Meta_musicalbum_music> {
 
     private Integer track;
 
-    private Integer music_id;
+    private Integer musicId;
 
-    private Integer musicalbum_id;
+    private Integer musicalbumId;
 
     private Date created;
 

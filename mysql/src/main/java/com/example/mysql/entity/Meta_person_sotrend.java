@@ -28,13 +28,13 @@ public class Meta_person_sotrend extends Model<Meta_person_sotrend> {
 
     private String keyword;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date updated;
 
-    private Integer person_id;
+    private Integer personId;
 
-    private Integer spider_id;
+    private Integer spiderId;
 
     private Date created;
 

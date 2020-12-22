@@ -24,7 +24,7 @@ public class Movie_tieba extends Model<Movie_tieba> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "movie_id", type = IdType.AUTO)
-    private Integer movie_id;
+    private Integer movieId;
 
     private String title;
 
@@ -32,21 +32,21 @@ public class Movie_tieba extends Model<Movie_tieba> {
 
     private String uid;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Integer sum;
 
-    private Integer post_sum;
+    private Integer postSum;
 
-    private Integer subject_sum;
+    private Integer subjectSum;
 
-    private Integer member_sum;
+    private Integer memberSum;
 
-    private Integer check_sum;
+    private Integer checkSum;
 
-    private Date spider_date;
+    private Date spiderDate;
 
-    private Integer grab_time;
+    private Integer grabTime;
 
     private Date created;
 
@@ -55,7 +55,7 @@ public class Movie_tieba extends Model<Movie_tieba> {
 
     @Override
     protected Serializable pkVal() {
-        return this.movie_id;
+        return this.movieId;
     }
 
 }

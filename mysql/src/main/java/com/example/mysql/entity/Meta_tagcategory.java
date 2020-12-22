@@ -30,7 +30,7 @@ public class Meta_tagcategory extends Model<Meta_tagcategory> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private Date created;
 

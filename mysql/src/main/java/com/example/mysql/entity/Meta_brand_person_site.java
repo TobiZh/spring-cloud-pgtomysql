@@ -24,25 +24,25 @@ public class Meta_brand_person_site extends Model<Meta_brand_person_site> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
+    private Integer id;
 
     private String title;
 
     private String url;
 
-    private String url_gen;
+    private String urlGen;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
-    private Date finish_time_new;
+    private Date finishTimeNew;
 
-    private Date finish_time_exclusive;
+    private Date finishTimeExclusive;
 
-    private Long brand_person_id;
+    private Integer brandPersonId;
 
-    private Integer site_id;
+    private Integer siteId;
 
-    private Long promotion_id;
+    private Long promotionId;
 
     private Date created;
 

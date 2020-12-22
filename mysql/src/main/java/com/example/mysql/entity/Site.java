@@ -26,25 +26,25 @@ public class Site extends Model<Site> {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String zh_name;
+    private String zhName;
 
-    private String en_name;
+    private String enName;
 
     private String url;
 
     private Integer orderby;
 
-    private String is_enabled_video;
+    private Boolean isEnabledVideo;
 
-    private String is_enabled_commerce;
+    private Boolean isEnabledCommerce;
 
-    private String is_enabled_social;
+    private Boolean isEnabledSocial;
 
     private Integer male;
 
     private Integer female;
 
-    private Integer unique_view;
+    private Integer uniqueView;
 
     private Date created;
 

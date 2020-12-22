@@ -28,25 +28,25 @@ public class Meta_brand_person extends Model<Meta_brand_person> {
 
     private Integer weight;
 
-    private String is_complete;
+    private Boolean isComplete;
 
-    private Date start_time;
+    private Date startTime;
 
-    private Date finish_time;
+    private Date finishTime;
 
-    private Integer brand_id;
+    private Integer brandId;
 
-    private Integer credit_id;
+    private Integer creditId;
 
-    private Integer person_id;
+    private Integer personId;
 
-    private Integer product_id;
+    private Integer productId;
 
     private Date created;
 
     private Date updated;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
 
     @Override

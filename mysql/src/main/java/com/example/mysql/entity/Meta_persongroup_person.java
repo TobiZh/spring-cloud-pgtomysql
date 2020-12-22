@@ -26,15 +26,15 @@ public class Meta_persongroup_person extends Model<Meta_persongroup_person> {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private Date start_time;
+    private Date startTime;
 
-    private Date finish_time;
+    private Date finishTime;
 
     private Integer weight;
 
-    private Integer person_id;
+    private Integer personId;
 
-    private Integer persongroup_id;
+    private Integer persongroupId;
 
     private Date created;
 

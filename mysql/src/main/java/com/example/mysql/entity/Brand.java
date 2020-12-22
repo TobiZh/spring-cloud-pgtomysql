@@ -32,7 +32,7 @@ public class Brand extends Model<Brand> {
 
     private Integer orderby;
 
-    private String is_enabled;
+    private Boolean isEnabled;
 
     private String description;
 
