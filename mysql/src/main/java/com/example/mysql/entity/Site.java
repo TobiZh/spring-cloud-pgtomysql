@@ -1,5 +1,7 @@
 package com.example.mysql.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,7 +15,7 @@ import java.util.Date;
  * </p>
  *
  * @author tobi
- * @since 2020-12-19
+ * @since 2020-12-22
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -21,27 +23,28 @@ public class Site extends Model<Site> {
 
     private static final long serialVersionUID = 1L;
 
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String zhName;
+    private String zh_name;
 
-    private String enName;
+    private String en_name;
 
     private String url;
 
     private Integer orderby;
 
-    private Boolean isEnabledVideo;
+    private String is_enabled_video;
 
-    private Boolean isEnabledCommerce;
+    private String is_enabled_commerce;
 
-    private Boolean isEnabledSocial;
+    private String is_enabled_social;
 
     private Integer male;
 
     private Integer female;
 
-    private Integer uniqueView;
+    private Integer unique_view;
 
     private Date created;
 

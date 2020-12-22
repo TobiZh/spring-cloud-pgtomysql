@@ -1,5 +1,7 @@
 package com.example.mysql.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,7 +15,7 @@ import java.util.Date;
  * </p>
  *
  * @author tobi
- * @since 2020-12-19
+ * @since 2020-12-22
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -21,19 +23,20 @@ public class Movie extends Model<Movie> {
 
     private static final long serialVersionUID = 1L;
 
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     private String title;
 
     private String alias;
 
-    private String sartfTitle;
+    private String sartf_title;
 
-    private Date releasedDate;
+    private Date released_date;
 
-    private Boolean releasedDateWait;
+    private String released_date_wait;
 
-    private Integer boxOffice;
+    private Integer box_office;
 
     private Integer runtime;
 
@@ -41,21 +44,21 @@ public class Movie extends Model<Movie> {
 
     private Integer orderby;
 
-    private Boolean isEnabled;
+    private String is_enabled;
 
-    private Boolean isDig;
+    private String is_dig;
 
-    private Boolean isPublished;
+    private String is_published;
 
-    private Boolean isComplete;
+    private String is_complete;
 
-    private String dataFrom;
+    private String data_from;
 
-    private Integer countryId;
+    private Integer country_id;
 
-    private Integer languageId;
+    private Integer language_id;
 
-    private Integer lifecycleId;
+    private Integer lifecycle_id;
 
     private String memo;
 

@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.pgsql.ant.entity.Person;
-import com.example.pgsql.feign.Result;
+import com.example.pgsql.result.Result;
 import org.springframework.stereotype.Service;
 
 @Service

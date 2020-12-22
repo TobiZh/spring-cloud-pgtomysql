@@ -1,5 +1,7 @@
 package com.example.mysql.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,7 +15,7 @@ import java.util.Date;
  * </p>
  *
  * @author tobi
- * @since 2020-12-19
+ * @since 2020-12-22
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -21,41 +23,42 @@ public class Zy extends Model<Zy> {
 
     private static final long serialVersionUID = 1L;
 
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     private String title;
 
     private String description;
 
-    private Date firstPlayDate;
+    private Date first_play_date;
 
-    private Date playTime;
+    private Date play_time;
 
     private Integer orderby;
 
-    private Boolean isEnabled;
+    private String is_enabled;
 
-    private Boolean isComplete;
+    private String is_complete;
 
-    private Integer frequencyId;
+    private Integer frequency_id;
 
-    private Integer mediaId;
+    private Integer media_id;
 
-    private Boolean isSearch;
+    private String is_search;
 
     private String top100;
 
-    private String listImg;
+    private String list_img;
 
-    private Integer categoryId;
+    private Integer category_id;
 
-    private Integer countryId;
+    private Integer country_id;
 
-    private Integer lifecycleId;
+    private Integer lifecycle_id;
 
-    private Integer typeId;
+    private Integer type_id;
 
-    private String searchKeyword;
+    private String search_keyword;
 
     private String memo;
 

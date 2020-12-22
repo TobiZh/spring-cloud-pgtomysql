@@ -1,5 +1,7 @@
 package com.example.mysql.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,7 +15,7 @@ import java.util.Date;
  * </p>
  *
  * @author tobi
- * @since 2020-12-19
+ * @since 2020-12-22
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -21,6 +23,7 @@ public class Prdhouse extends Model<Prdhouse> {
 
     private static final long serialVersionUID = 1L;
 
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     private String name;
@@ -33,7 +36,7 @@ public class Prdhouse extends Model<Prdhouse> {
 
     private Integer orderby;
 
-    private Boolean isEnabled;
+    private String is_enabled;
 
     private String memo;
 

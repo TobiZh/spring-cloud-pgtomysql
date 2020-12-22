@@ -1,5 +1,7 @@
 package com.example.mysql.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,7 +15,7 @@ import java.util.Date;
  * </p>
  *
  * @author tobi
- * @since 2020-12-19
+ * @since 2020-12-22
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -21,17 +23,18 @@ public class Person extends Model<Person> {
 
     private static final long serialVersionUID = 1L;
 
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String zhName;
+    private String zh_name;
 
     private Integer sex;
 
     private String description;
 
-    private String pinyinName;
+    private String pinyin_name;
 
-    private String enName;
+    private String en_name;
 
     private String alias;
 
@@ -43,39 +46,39 @@ public class Person extends Model<Person> {
 
     private Integer orderby;
 
-    private Boolean isEnabled;
+    private String is_enabled;
 
-    private Boolean isComplete;
+    private String is_complete;
 
-    private Boolean isWriter;
+    private String is_writer;
 
-    private Boolean isDirector;
+    private String is_director;
 
-    private Boolean isPerformer;
+    private String is_performer;
 
-    private Boolean isProducer;
+    private String is_producer;
 
-    private Boolean isExeproducer;
+    private String is_exeproducer;
 
-    private Boolean isStation;
+    private String is_station;
 
-    private Integer panelSum;
+    private Integer panel_sum;
 
     private Integer status;
 
-    private Boolean hasAvatar;
+    private String has_avatar;
 
     private String character;
 
     private String avatar;
 
-    private Integer countryId;
+    private Integer country_id;
 
     private String memo;
 
-    private String avatarCustom;
+    private String avatar_custom;
 
-    private Boolean isXunyeeCheck;
+    private String is_xunyee_check;
 
     private Date created;
 
