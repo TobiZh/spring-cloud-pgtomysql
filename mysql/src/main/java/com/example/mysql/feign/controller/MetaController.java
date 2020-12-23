@@ -33,6 +33,13 @@ public class MetaController {
     @Resource
     private HuatiServiceImpl huatiService;
 
+    @Resource
+    private PrdhouseServiceImpl prdhouseService;
+    @Resource
+    private ProductServiceImpl productService;
+    @Resource
+    private SiteServiceImpl siteService;
+
     @Autowired
     private MetaServer metaServer;
 
@@ -140,6 +147,61 @@ public class MetaController {
         }
 
         boolean isInsert=huatiService.saveBatch(list);
+        return Result.SUCCESS(isInsert);
+
+    }
+
+
+    @GetMapping("prdhouse")
+    public Result prdhouse(){
+        List<com.example.mysql.entity.Prdhouse> result= metaServer.prdhouse();
+
+        List<Prdhouse> list=new ArrayList<>();
+        for (com.example.mysql.entity.Prdhouse i:result){
+            Prdhouse b=new Prdhouse();
+            BeanUtils.copyProperties(i,b);
+            b.setUpdated(DateUtil.asLocalDateTime(i.getUpdated()));
+            b.setCreated(DateUtil.asLocalDateTime(i.getCreated()));
+            list.add(b);
+        }
+
+        boolean isInsert=prdhouseService.saveBatch(list);
+        return Result.SUCCESS(isInsert);
+
+    }
+
+    @GetMapping("product")
+    public Result product(){
+        List<com.example.mysql.entity.Product> result= metaServer.product();
+
+        List<Product> list=new ArrayList<>();
+        for (com.example.mysql.entity.Product i:result){
+            Product b=new Product();
+            BeanUtils.copyProperties(i,b);
+            b.setUpdated(DateUtil.asLocalDateTime(i.getUpdated()));
+            b.setCreated(DateUtil.asLocalDateTime(i.getCreated()));
+            list.add(b);
+        }
+
+        boolean isInsert=productService.saveBatch(list);
+        return Result.SUCCESS(isInsert);
+
+    }
+
+    @GetMapping("site")
+    public Result site(){
+        List<com.example.mysql.entity.Site> result= metaServer.site();
+
+        List<Site> list=new ArrayList<>();
+        for (com.example.mysql.entity.Site i:result){
+            Site b=new Site();
+            BeanUtils.copyProperties(i,b);
+            b.setUpdated(DateUtil.asLocalDateTime(i.getUpdated()));
+            b.setCreated(DateUtil.asLocalDateTime(i.getCreated()));
+            list.add(b);
+        }
+
+        boolean isInsert=siteService.saveBatch(list);
         return Result.SUCCESS(isInsert);
 
     }

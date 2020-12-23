@@ -27,6 +27,15 @@ public interface MetaServer {
     List<Meta_lifecycle> lifecycle();
     @GetMapping("/huati")
     List<Huati> huati();
+    @GetMapping("/prdhouse")
+    List<Prdhouse> prdhouse();
+    @GetMapping("/product")
+    List<Product> product();
+    @GetMapping("/site")
+    List<Site> site();
+
+
+
 
     @GetMapping("/brand")
     List<Brand> brand();

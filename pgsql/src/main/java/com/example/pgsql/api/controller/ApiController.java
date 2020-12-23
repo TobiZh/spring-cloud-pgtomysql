@@ -54,4 +54,18 @@ public class ApiController {
         return new Meta_lifecycle().selectAll();
     }
 
+
+    @GetMapping("prdhouse")
+    public List<Prdhouse> prdhouse(){
+        return new Prdhouse().selectAll();
+    }
+    @GetMapping("product")
+    public List<Product> product(){
+        return new Product().selectAll();
+    }
+    @GetMapping("site")
+    public List<Site> site(){
+        return new Site().selectAll();
+    }
+
 }
