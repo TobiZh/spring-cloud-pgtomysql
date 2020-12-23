@@ -11,6 +11,7 @@ import com.example.mysql.ant.service.impl.Brand_siteServiceImpl;
 import com.example.mysql.feign.service.MetaServer;
 import com.example.mysql.result.Result;
 import com.example.mysql.utils.DateUtil;
+import io.swagger.annotations.Api;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +22,7 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
+@Api("品牌")
 @RequestMapping("brand")
 @RestController
 public class BrandController {

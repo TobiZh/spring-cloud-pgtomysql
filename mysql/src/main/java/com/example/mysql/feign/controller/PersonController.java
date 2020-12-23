@@ -7,6 +7,7 @@ import com.example.mysql.entity.Person;
 import com.example.mysql.feign.service.MetaServer;
 import com.example.mysql.result.Result;
 import com.example.mysql.utils.DateUtil;
+import io.swagger.annotations.Api;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,7 @@ import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
+@Api("艺人")
 @RequestMapping("person")
 @RestController
 public class PersonController {
