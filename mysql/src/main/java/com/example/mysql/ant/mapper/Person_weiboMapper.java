@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author tobi
- * @since 2020-12-22
+ * @since 2020-12-23
  */
 public interface Person_weiboMapper extends BaseMapper<Person_weibo> {
 

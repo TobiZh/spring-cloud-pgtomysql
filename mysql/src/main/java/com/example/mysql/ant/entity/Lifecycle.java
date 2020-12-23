@@ -14,7 +14,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author tobi
- * @since 2020-12-22
+ * @since 2020-12-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -25,7 +25,7 @@ public class Lifecycle extends Model<Lifecycle> {
     /**
      * 自增id
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**
@@ -36,17 +36,17 @@ public class Lifecycle extends Model<Lifecycle> {
     /**
      * 是否适用电影
      */
-    private Integer isEnabledMovie;
+    private Boolean isEnabledMovie;
 
     /**
      * 是否适用电视剧
      */
-    private Integer isEnabledTeleplay;
+    private Boolean isEnabledTeleplay;
 
     /**
      * 是否适用综艺
      */
-    private Integer isEnabledZy;
+    private Boolean isEnabledZy;
 
     /**
      * 是否删除 0 正常 ；1已删除

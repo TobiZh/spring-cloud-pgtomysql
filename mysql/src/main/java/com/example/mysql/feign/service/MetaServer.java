@@ -17,7 +17,16 @@ public interface MetaServer {
 
     @GetMapping("/character")
     List<Meta_character> character();
-
+    @GetMapping("/country")
+    List<Country> country();
+    @GetMapping("/credit")
+    List<Meta_credit> credit();
+    @GetMapping("/language")
+    List<Language> language();
+    @GetMapping("/lifecycle")
+    List<Meta_lifecycle> lifecycle();
+    @GetMapping("/huati")
+    List<Huati> huati();
 
     @GetMapping("/brand")
     List<Brand> brand();
@@ -31,6 +40,21 @@ public interface MetaServer {
     @GetMapping("/brand/person/site")
     List<Meta_brand_person_site> Meta_brand_person_site();
 
+
+    //======================== person ================================
     @GetMapping("/person/{page}/{size}")
     Result<Page<Person>> getPersonPage(@PathVariable("page") int page, @PathVariable("size") int size);
+
+    @GetMapping("/person/baidutop")
+    List<Person_baidutop> baidutop();
+    @GetMapping("/person/buluo")
+    List<Person_buluo> buluo();
+    @GetMapping("/person/douban")
+    List<Person_douban> douban();
+    @GetMapping("/person/huati")
+    List<Person_huati> personhuati();
+    @GetMapping("/person/tieba")
+    List<Person_tieba> persontieba();
+    @GetMapping("/person/weibo")
+    List<Person_weibo> personweibo();
 }

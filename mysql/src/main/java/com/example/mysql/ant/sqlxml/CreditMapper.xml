@@ -6,20 +6,20 @@
     <resultMap id="BaseResultMap" type="com.example.mysql.ant.entity.Credit">
         <id column="id" property="id" />
         <result column="name" property="name" />
-        <result column="is_enabled_movie_person" property="isEnabledMoviePerson" />
-        <result column="is_enabled_teleplay_person" property="isEnabledTeleplayPerson" />
-        <result column="is_enabled_zy_person" property="isEnabledZyPerson" />
-        <result column="is_enabled_brand_person" property="isEnabledBrandPerson" />
-        <result column="is_enabled_music_person" property="isEnabledMusicPerson" />
-        <result column="is_enabled_musicalbum_person" property="isEnabledMusicalbumPerson" />
-        <result column="is_enabled_prdhouse_person" property="isEnabledPrdhousePerson" />
-        <result column="is_enabled_prdhouse_persongroup" property="isEnabledPrdhousePersongroup" />
-        <result column="is_enabled_movie_prdhouse" property="isEnabledMoviePrdhouse" />
-        <result column="is_enabled_teleplay_prdhouse" property="isEnabledTeleplayPrdhouse" />
-        <result column="is_enabled_zy_prdhouse" property="isEnabledZyPrdhouse" />
-        <result column="is_enabled_brand_prdhouse" property="isEnabledBrandPrdhouse" />
-        <result column="is_enabled_music_prdhouse" property="isEnabledMusicPrdhouse" />
-        <result column="is_enabled_musicalbum_prdhouse" property="isEnabledMusicalbumPrdhouse" />
+        <result column="is_enabled_movie" property="isEnabledMovie" />
+        <result column="is_enabled_teleplay" property="isEnabledTeleplay" />
+        <result column="is_enabled_zy" property="isEnabledZy" />
+        <result column="is_enabled_brand" property="isEnabledBrand" />
+        <result column="is_enabled_person_prdhouse" property="isEnabledPersonPrdhouse" />
+        <result column="is_enabled_prdhouse_brand" property="isEnabledPrdhouseBrand" />
+        <result column="is_enabled_prdhouse_movie" property="isEnabledPrdhouseMovie" />
+        <result column="is_enabled_prdhouse_teleplay" property="isEnabledPrdhouseTeleplay" />
+        <result column="is_enabled_prdhouse_zy" property="isEnabledPrdhouseZy" />
+        <result column="is_enabled_music" property="isEnabledMusic" />
+        <result column="is_enabled_musicalbum" property="isEnabledMusicalbum" />
+        <result column="is_enabled_persongroup_prdhouse" property="isEnabledPersongroupPrdhouse" />
+        <result column="is_enabled_prdhouse_music" property="isEnabledPrdhouseMusic" />
+        <result column="is_enabled_prdhouse_musicalbum" property="isEnabledPrdhouseMusicalbum" />
         <result column="is_deleted" property="isDeleted" />
         <result column="updated" property="updated" />
         <result column="created" property="created" />

@@ -1,8 +1,7 @@
 package com.example.pgsql.api.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.example.pgsql.ant.entity.Meta_character;
-import com.example.pgsql.ant.entity.Person;
+import com.example.pgsql.ant.entity.*;
 import com.example.pgsql.api.service.ApiService;
 import com.example.pgsql.result.Result;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,4 +28,30 @@ public class ApiController {
     public List<Meta_character> character(){
         return new Meta_character().selectAll();
     }
+
+    @GetMapping("country")
+    public List<Country> country(){
+        return new Country().selectAll();
+    }
+
+    @GetMapping("credit")
+    public List<Meta_credit> credit(){
+        return new Meta_credit().selectAll();
+    }
+
+    @GetMapping("huati")
+    public List<Huati> Huati(){
+        return new Huati().selectAll();
+    }
+
+    @GetMapping("language")
+    public List<Language> language(){
+        return new Language().selectAll();
+    }
+
+    @GetMapping("lifecycle")
+    public List<Meta_lifecycle> lifecycle(){
+        return new Meta_lifecycle().selectAll();
+    }
+
 }

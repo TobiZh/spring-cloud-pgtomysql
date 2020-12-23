@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author tobi
- * @since 2020-12-22
+ * @since 2020-12-23
  */
 public interface IZy_weiboService extends IService<Zy_weibo> {
 

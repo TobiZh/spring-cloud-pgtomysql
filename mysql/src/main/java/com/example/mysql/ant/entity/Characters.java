@@ -14,7 +14,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author tobi
- * @since 2020-12-22
+ * @since 2020-12-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -36,7 +36,7 @@ public class Characters extends Model<Characters> {
     /**
      * 性别 1 男；2女
      */
-    private Integer sex;
+    private Boolean sex;
 
     /**
      * 描述
@@ -46,7 +46,7 @@ public class Characters extends Model<Characters> {
     /**
      * 是否启用，计算指数 0 未启用；1 已启用
      */
-    private Integer isEnabled;
+    private Boolean isEnabled;
 
     /**
      * 是否编辑完整 0 不完整；1 编辑完整

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author tobi
- * @since 2020-12-22
+ * @since 2020-12-23
  */
 @Service
 public class Person_sotrendServiceImpl extends ServiceImpl<Person_sotrendMapper, Person_sotrend> implements IPerson_sotrendService {

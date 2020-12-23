@@ -15,7 +15,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author tobi
- * @since 2020-12-22
+ * @since 2020-12-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -26,7 +26,7 @@ public class Person extends Model<Person> {
     /**
      * 自增id
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**
@@ -37,7 +37,7 @@ public class Person extends Model<Person> {
     /**
      * 性别 1 男； 2 女
      */
-    private Boolean sex;
+    private Integer sex;
 
     /**
      * 国家地区
@@ -82,17 +82,17 @@ public class Person extends Model<Person> {
     /**
      * 已启用，计算指数
      */
-    private Integer isEnabled;
+    private Boolean isEnabled;
 
     /**
      * 已编辑完整
      */
-    private Integer isComplete;
+    private Boolean isComplete;
 
     /**
      * 是否可以在寻艺签到
      */
-    private Integer isXunyeeCheck;
+    private Boolean isXunyeeCheck;
 
     /**
      * 头像
@@ -102,32 +102,32 @@ public class Person extends Model<Person> {
     /**
      * 网络头像
      */
-    private String webAvatar;
+    private String avatarCustom;
 
     /**
      * 是否是编剧
      */
-    private Integer isWriter;
+    private Boolean isWriter;
 
     /**
      * 是否是导演
      */
-    private Integer isDirector;
+    private Boolean isDirector;
 
     /**
      * 是否是演员
      */
-    private Integer isPerformer;
+    private Boolean isPerformer;
 
     /**
      * 是否是监制
      */
-    private Integer isProducer;
+    private Boolean isProducer;
 
     /**
      * 是否是制片人
      */
-    private Integer isExeproducer;
+    private Boolean isExeproducer;
 
     /**
      * 是否锁定

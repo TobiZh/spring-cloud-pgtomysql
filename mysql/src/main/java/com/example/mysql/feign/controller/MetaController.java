@@ -1,10 +1,8 @@
 package com.example.mysql.feign.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.example.mysql.ant.entity.Characters;
-import com.example.mysql.ant.service.impl.CharacterServiceImpl;
-import com.example.mysql.ant.service.impl.PersonServiceImpl;
-import com.example.mysql.entity.Person;
+import com.example.mysql.ant.entity.*;
+import com.example.mysql.ant.service.impl.*;
 import com.example.mysql.feign.service.MetaServer;
 import com.example.mysql.result.Result;
 import com.example.mysql.utils.DateUtil;
@@ -21,47 +19,22 @@ import java.util.List;
 @RestController
 public class MetaController {
 
+
     @Resource
-    private PersonServiceImpl personServiceImpl;
+    private CharactersServiceImpl charactersService;
     @Resource
-    private CharacterServiceImpl characterService;
+    private CountryServiceImpl countryService;
+    @Resource
+    private CreditServiceImpl creditService;
+    @Resource
+    private LanguageServiceImpl languageService;
+    @Resource
+    private LifecycleServiceImpl lifecycleService;
+    @Resource
+    private HuatiServiceImpl huatiService;
 
     @Autowired
     private MetaServer metaServer;
-
-    @GetMapping("person/{page}/{size}")
-    public Result person(@PathVariable("page") int page, @PathVariable("size") int size){
-        Result<Page<Person>> pageResult= metaServer.getPersonPage(page,size);
-        List<Person> personList=pageResult.getData().getRecords();
-        List<com.example.mysql.ant.entity.Person> list=new ArrayList<>();
-        for (Person p:personList){
-            com.example.mysql.ant.entity.Person person=new com.example.mysql.ant.entity.Person() ;
-//            person.setId(p.getId());
-//            person.setAlias(p.getAlias());
-//            person.setAvatar(p.getAvatar());
-//            person.setBirthday(DateUtil.date2LocalDate(p.getBirthday()));
-//            person.setCreated(DateUtil.asLocalDateTime(p.getCreated()));
-//            person.setCountryId(p.getCountryId());
-//            person.setDescription(p.getDescription());
-//            person.setEnName(p.getEnName());
-//            person.setHeight(p.getHeight());
-//            person.setIs_enabled(p.getIs_enabled());
-//            person.setUpdated(DateUtil.asLocalDateTime(p.getUpdated()));
-//            person.setIs_exeproducer(p.getIs_exeproducer());
-//            person.setZh_name(p.getZh_name());
-//            person.setIs_director(p.getIs_director());
-//            person.setSex(p.getSex());
-//            person.setIs_performer(p.getIs_performer());
-//            person.setWeight(p.getWeight());
-//            person.setPinyin_name(p.getPinyin_name());
-//            person.setWeb_avatar(p.getAvatar_custom());
-//            person.setIs_xunyee_check(p.getIs_xunyee_check());
-//            person.setIs_producer(p.getIs_producer());
-            list.add(person);
-        }
-        boolean isInsert=personServiceImpl.saveBatch(list);
-        return Result.SUCCESS(isInsert);
-    }
 
     @GetMapping("character")
     public Result character(){
@@ -76,9 +49,98 @@ public class MetaController {
             list.add(b);
         }
 
-        boolean isInsert=characterService.saveBatch(list);
+        boolean isInsert=charactersService.saveBatch(list);
         return Result.SUCCESS(isInsert);
 
     }
 
+    @GetMapping("country")
+    public Result country(){
+        List<com.example.mysql.entity.Country> result= metaServer.country();
+
+        List<Country> list=new ArrayList<>();
+        for (com.example.mysql.entity.Country i:result){
+            Country b=new Country();
+            BeanUtils.copyProperties(i,b);
+            b.setUpdated(DateUtil.asLocalDateTime(i.getUpdated()));
+            b.setCreated(DateUtil.asLocalDateTime(i.getCreated()));
+            list.add(b);
+        }
+
+        boolean isInsert=countryService.saveBatch(list);
+        return Result.SUCCESS(isInsert);
+
+    }
+
+    @GetMapping("credit")
+    public Result credit(){
+        List<com.example.mysql.entity.Meta_credit> result= metaServer.credit();
+
+        List<Credit> list=new ArrayList<>();
+        for (com.example.mysql.entity.Meta_credit i:result){
+            Credit b=new Credit();
+            BeanUtils.copyProperties(i,b);
+            b.setUpdated(DateUtil.asLocalDateTime(i.getUpdated()));
+            b.setCreated(DateUtil.asLocalDateTime(i.getCreated()));
+            list.add(b);
+        }
+
+        boolean isInsert=creditService.saveBatch(list);
+        return Result.SUCCESS(isInsert);
+
+    }
+
+    @GetMapping("lifecycle")
+    public Result lifecycle(){
+        List<com.example.mysql.entity.Meta_lifecycle> result= metaServer.lifecycle();
+
+        List<Lifecycle> list=new ArrayList<>();
+        for (com.example.mysql.entity.Meta_lifecycle i:result){
+            Lifecycle b=new Lifecycle();
+            BeanUtils.copyProperties(i,b);
+            b.setUpdated(DateUtil.asLocalDateTime(i.getUpdated()));
+            b.setCreated(DateUtil.asLocalDateTime(i.getCreated()));
+            list.add(b);
+        }
+
+        boolean isInsert=lifecycleService.saveBatch(list);
+        return Result.SUCCESS(isInsert);
+
+    }
+
+    @GetMapping("language")
+    public Result language(){
+        List<com.example.mysql.entity.Language> result= metaServer.language();
+
+        List<Language> list=new ArrayList<>();
+        for (com.example.mysql.entity.Language i:result){
+            Language b=new Language();
+            BeanUtils.copyProperties(i,b);
+            b.setUpdated(DateUtil.asLocalDateTime(i.getUpdated()));
+            b.setCreated(DateUtil.asLocalDateTime(i.getCreated()));
+            list.add(b);
+        }
+
+        boolean isInsert=languageService.saveBatch(list);
+        return Result.SUCCESS(isInsert);
+
+    }
+
+    @GetMapping("huati")
+    public Result huati(){
+        List<com.example.mysql.entity.Huati> result= metaServer.huati();
+
+        List<Huati> list=new ArrayList<>();
+        for (com.example.mysql.entity.Huati i:result){
+            Huati b=new Huati();
+            BeanUtils.copyProperties(i,b);
+            b.setUpdated(DateUtil.asLocalDateTime(i.getUpdated()));
+            b.setCreated(DateUtil.asLocalDateTime(i.getCreated()));
+            list.add(b);
+        }
+
+        boolean isInsert=huatiService.saveBatch(list);
+        return Result.SUCCESS(isInsert);
+
+    }
 }

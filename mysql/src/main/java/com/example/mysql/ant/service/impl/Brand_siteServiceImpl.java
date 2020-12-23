@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author tobi
- * @since 2020-12-22
+ * @since 2020-12-23
  */
 @Service
 public class Brand_siteServiceImpl extends ServiceImpl<Brand_siteMapper, Brand_site> implements IBrand_siteService {

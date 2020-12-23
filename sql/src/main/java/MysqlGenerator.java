@@ -22,7 +22,7 @@ public class MysqlGenerator {
         gc.setOutputDir(projectPath + "/mysql/src/main/java");
         gc.setSwagger2(false);
         gc.setOpen(false);
-        gc.setFileOverride(true);
+        gc.setFileOverride(false);
         gc.setActiveRecord(true);// 不需要ActiveRecord特性的请改为false
         gc.setEnableCache(false);// XML 二级缓存
         gc.setBaseResultMap(true);// XML ResultMap

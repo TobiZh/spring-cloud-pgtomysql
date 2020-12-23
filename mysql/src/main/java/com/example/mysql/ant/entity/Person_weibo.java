@@ -15,7 +15,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author tobi
- * @since 2020-12-22
+ * @since 2020-12-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -52,7 +52,7 @@ public class Person_weibo extends Model<Person_weibo> {
     /**
      * 需要登录后访问
      */
-    private Integer isLogin;
+    private Boolean isLogin;
 
     /**
      * 粉丝总数

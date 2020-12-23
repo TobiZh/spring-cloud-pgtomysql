@@ -14,7 +14,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author tobi
- * @since 2020-12-22
+ * @since 2020-12-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -25,7 +25,7 @@ public class Site extends Model<Site> {
     /**
      * 自增id
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**
@@ -46,17 +46,17 @@ public class Site extends Model<Site> {
     /**
      * 是否是视频网站
      */
-    private Integer isEnabledVideo;
+    private Boolean isEnabledVideo;
 
     /**
      * 是否是电商网站
      */
-    private Integer isEnabledCommerce;
+    private Boolean isEnabledCommerce;
 
     /**
      * 是否是社交网站
      */
-    private Integer isEnabledSocial;
+    private Boolean isEnabledSocial;
 
     /**
      * 是否删除 0 正常 ；1已删除

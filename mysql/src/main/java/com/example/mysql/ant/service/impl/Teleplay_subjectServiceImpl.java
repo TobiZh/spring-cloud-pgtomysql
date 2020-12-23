@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author tobi
- * @since 2020-12-22
+ * @since 2020-12-23
  */
 @Service
 public class Teleplay_subjectServiceImpl extends ServiceImpl<Teleplay_subjectMapper, Teleplay_subject> implements ITeleplay_subjectService {

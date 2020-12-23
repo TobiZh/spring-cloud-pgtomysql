@@ -14,7 +14,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author tobi
- * @since 2020-12-22
+ * @since 2020-12-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -25,7 +25,7 @@ public class Credit extends Model<Credit> {
     /**
      * 自增id
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**
@@ -36,72 +36,72 @@ public class Credit extends Model<Credit> {
     /**
      * 是否在电影关联艺人中启用
      */
-    private Integer isEnabledMoviePerson;
+    private Boolean isEnabledMovie;
 
     /**
      * 是否在电视剧关联艺人中启用
      */
-    private Integer isEnabledTeleplayPerson;
+    private Boolean isEnabledTeleplay;
 
     /**
      * 是否在综艺关联艺人中启用
      */
-    private Integer isEnabledZyPerson;
+    private Boolean isEnabledZy;
 
     /**
      * 是否在品牌关联艺人中启用
      */
-    private Integer isEnabledBrandPerson;
-
-    /**
-     * 是否在音乐关联艺人中启用
-     */
-    private Integer isEnabledMusicPerson;
-
-    /**
-     * 是否在音乐专辑关联艺人中启用
-     */
-    private Integer isEnabledMusicalbumPerson;
+    private Boolean isEnabledBrand;
 
     /**
      * 是否在组织机构关联艺人中启用
      */
-    private Integer isEnabledPrdhousePerson;
-
-    /**
-     * 是否在组织机构关联艺人组合中启用
-     */
-    private Integer isEnabledPrdhousePersongroup;
-
-    /**
-     * 是否在电影关联组织机构中启用
-     */
-    private Integer isEnabledMoviePrdhouse;
-
-    /**
-     * 是否在电视剧关联组织机构中启用
-     */
-    private Integer isEnabledTeleplayPrdhouse;
-
-    /**
-     * 是否在综艺关联组织机构中启用
-     */
-    private Integer isEnabledZyPrdhouse;
+    private Boolean isEnabledPersonPrdhouse;
 
     /**
      * 是否在品牌关联组织机构中启用
      */
-    private Integer isEnabledBrandPrdhouse;
+    private Boolean isEnabledPrdhouseBrand;
+
+    /**
+     * 是否在电影关联组织机构中启用
+     */
+    private Boolean isEnabledPrdhouseMovie;
+
+    /**
+     * 是否在电视剧关联组织机构中启用
+     */
+    private Boolean isEnabledPrdhouseTeleplay;
+
+    /**
+     * 是否在综艺关联组织机构中启用
+     */
+    private Boolean isEnabledPrdhouseZy;
+
+    /**
+     * 是否在音乐关联艺人中启用
+     */
+    private Boolean isEnabledMusic;
+
+    /**
+     * 是否在音乐专辑关联艺人中启用
+     */
+    private Boolean isEnabledMusicalbum;
+
+    /**
+     * 是否在组织机构关联艺人组合中启用
+     */
+    private Boolean isEnabledPersongroupPrdhouse;
 
     /**
      * 是否在音乐关联组织机构中启用
      */
-    private Integer isEnabledMusicPrdhouse;
+    private Boolean isEnabledPrdhouseMusic;
 
     /**
      * 是否在音乐专辑关联组织机构中启用
      */
-    private Integer isEnabledMusicalbumPrdhouse;
+    private Boolean isEnabledPrdhouseMusicalbum;
 
     /**
      * 是否删除 0 正常 ；1已删除

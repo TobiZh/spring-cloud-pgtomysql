@@ -19,7 +19,7 @@
         <result column="is_complete" property="isComplete" />
         <result column="is_xunyee_check" property="isXunyeeCheck" />
         <result column="avatar" property="avatar" />
-        <result column="web_avatar" property="webAvatar" />
+        <result column="avatar_custom" property="avatarCustom" />
         <result column="is_writer" property="isWriter" />
         <result column="is_director" property="isDirector" />
         <result column="is_performer" property="isPerformer" />
