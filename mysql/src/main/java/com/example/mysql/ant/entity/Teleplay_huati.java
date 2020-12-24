@@ -25,7 +25,7 @@ public class Teleplay_huati extends Model<Teleplay_huati> {
     /**
      * 自增id
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**

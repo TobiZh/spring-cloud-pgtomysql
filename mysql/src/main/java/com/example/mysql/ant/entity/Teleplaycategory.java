@@ -22,7 +22,7 @@ public class Teleplaycategory extends Model<Teleplaycategory> {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**

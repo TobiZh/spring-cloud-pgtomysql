@@ -25,7 +25,7 @@ public class Teleplaysubject extends Model<Teleplaysubject> {
     /**
      * 自增id
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**
@@ -36,7 +36,7 @@ public class Teleplaysubject extends Model<Teleplaysubject> {
     /**
      * 是否删除 0 正常 ；1已删除
      */
-    private Integer isDeleted;
+    private Boolean isDeleted;
 
     /**
      * 记录修改时间戳

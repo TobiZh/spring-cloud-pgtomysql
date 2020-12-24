@@ -6,7 +6,7 @@
     <resultMap id="BaseResultMap" type="com.example.mysql.ant.entity.Teleplay_subject">
         <id column="id" property="id" />
         <result column="teleplay_id" property="teleplayId" />
-        <result column="subject_id" property="subjectId" />
+        <result column="teleplaysubject_id" property="teleplaysubjectId" />
         <result column="is_deleted" property="isDeleted" />
         <result column="updated" property="updated" />
         <result column="created" property="created" />

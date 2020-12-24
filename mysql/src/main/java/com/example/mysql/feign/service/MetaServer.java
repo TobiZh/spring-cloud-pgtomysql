@@ -1,6 +1,8 @@
 package com.example.mysql.feign.service;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.example.mysql.ant.entity.Teleplay_prdhouse;
+import com.example.mysql.ant.entity.Teleplay_sotrend;
 import com.example.mysql.entity.*;
 import com.example.mysql.result.Result;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -39,21 +41,17 @@ public interface MetaServer {
 
     @GetMapping("/brand")
     List<Brand> brand();
-
     @GetMapping("/brand/person")
     List<Meta_brand_person> Meta_brand_person();
-
     @GetMapping("/brand/site")
     List<Meta_brand_site> Meta_brand_site();
-
     @GetMapping("/brand/person/site")
     List<Meta_brand_person_site> Meta_brand_person_site();
 
 
     //======================== person ================================
-    @GetMapping("/person/{page}/{size}")
-    Result<Page<Person>> getPersonPage(@PathVariable("page") int page, @PathVariable("size") int size);
-
+    @GetMapping("/person")
+    List<Person> person();
     @GetMapping("/person/baidutop")
     List<Person_baidutop> baidutop();
     @GetMapping("/person/buluo")
@@ -66,4 +64,38 @@ public interface MetaServer {
     List<Person_tieba> persontieba();
     @GetMapping("/person/weibo")
     List<Person_weibo> personweibo();
+    //======================== person ================================
+
+
+    //======================== teleplay ================================
+    @GetMapping("teleplay")
+    List<Teleplay> teleplay();
+    @GetMapping("/teleplay/baidutop")
+    List<Teleplay_baidutop> teleplaybaidutop();
+    @GetMapping("/teleplay/buluo")
+    List<Teleplay_buluo> teleplaybuluo();
+    @GetMapping("/teleplay/douban")
+    List<Teleplay_douban> teleplaydouban();
+    @GetMapping("/teleplay/huati")
+    List<Teleplay_huati> teleplayhuati();
+    @GetMapping("/teleplay/tieba")
+    List<Teleplay_tieba> teleplaytieba();
+    @GetMapping("/teleplay/weibo")
+    List<Teleplay_weibo> teleplayweibo();
+    @GetMapping("/teleplay/subject")
+    List<Teleplay_subject> teleplay_subject();
+    @GetMapping("/teleplay/person")
+    List<Teleplay_person> teleplayperson();
+    @GetMapping("/teleplay/prdhouse")
+    List<Meta_teleplay_prdhouse> teleplayprdhouse();
+    @GetMapping("/teleplay/site")
+    List<Teleplay_site> teleplaysite();
+    @GetMapping("/teleplay/sotrend")
+    List<Meta_teleplay_sotrend> teleplaysotrend();
+    @GetMapping("teleplay/teleplaycategory")
+    List<Teleplaycategory> teleplaycategory();
+    @GetMapping("teleplay/teleplaysubject")
+    List<Teleplaysubject> teleplaysubject();
+    //======================== teleplay ================================
+
 }

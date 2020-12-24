@@ -1,9 +1,8 @@
 package com.example.mysql.feign.controller;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.mysql.ant.entity.*;
 import com.example.mysql.ant.service.impl.*;
-import com.example.mysql.entity.Person;
+import com.example.mysql.ant.entity.Person;
 import com.example.mysql.feign.service.MetaServer;
 import com.example.mysql.result.Result;
 import com.example.mysql.utils.DateUtil;
@@ -11,7 +10,6 @@ import io.swagger.annotations.Api;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -41,13 +39,12 @@ public class PersonController {
     @Resource
     private Person_weiboServiceImpl weiboService;
 
-    @GetMapping("/{page}/{size}")
-    public Result person(@PathVariable("page") int page, @PathVariable("size") int size){
-        Result<Page<Person>> pageResult= metaServer.getPersonPage(page,size);
-        List<Person> personList=pageResult.getData().getRecords();
-        List<com.example.mysql.ant.entity.Person> list=new ArrayList<>();
-        for (com.example.mysql.entity.Person i:personList){
-            com.example.mysql.ant.entity.Person b=new com.example.mysql.ant.entity.Person() ;
+    @GetMapping("")
+    public Result person(){
+        List<com.example.mysql.entity.Person> result= metaServer.person();
+        List<Person> list=new ArrayList<>();
+        for (com.example.mysql.entity.Person i:result){
+            Person b=new Person() ;
             BeanUtils.copyProperties(i,b);
             b.setBirthday(DateUtil.date2LocalDate(i.getBirthday()));
             b.setUpdated(DateUtil.asLocalDateTime(i.getUpdated()));

@@ -32,9 +32,9 @@ public class Teleplay_sotrend extends Model<Teleplay_sotrend> {
 
     private Boolean isEnabled;
 
-    private Integer isDeleted;
+    private Boolean isDeleted;
 
-    private LocalDate created;
+    private LocalDateTime created;
 
     private LocalDateTime updated;
 

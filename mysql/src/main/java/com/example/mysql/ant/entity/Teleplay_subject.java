@@ -36,7 +36,7 @@ public class Teleplay_subject extends Model<Teleplay_subject> {
     /**
      * 题材id
      */
-    private Integer subjectId;
+    private Integer teleplaysubjectId;
 
     /**
      * 是否删除 0 正常 ；1已删除

@@ -25,7 +25,7 @@ public class Teleplay_site extends Model<Teleplay_site> {
     /**
      * 自增id
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**
@@ -61,7 +61,7 @@ public class Teleplay_site extends Model<Teleplay_site> {
     /**
      * 是正片
      */
-    private Integer isFullepi;
+    private Boolean isFullepi;
 
     /**
      * 爬虫id
@@ -76,7 +76,7 @@ public class Teleplay_site extends Model<Teleplay_site> {
     /**
      * 是否是正确的URL
      */
-    private Integer isMinId;
+    private Boolean isMinId;
 
     /**
      * 爬虫状态
@@ -86,7 +86,7 @@ public class Teleplay_site extends Model<Teleplay_site> {
     /**
      * 是否删除 0 正常 ；1已删除
      */
-    private Integer isDeleted;
+    private Boolean isDeleted;
 
     /**
      * 记录修改时间戳

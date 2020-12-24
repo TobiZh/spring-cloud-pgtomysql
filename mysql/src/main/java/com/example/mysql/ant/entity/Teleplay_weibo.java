@@ -52,7 +52,7 @@ public class Teleplay_weibo extends Model<Teleplay_weibo> {
     /**
      * 需要登录后访问
      */
-    private Integer isLogin;
+    private Boolean isLogin;
 
     /**
      * 粉丝总数
@@ -77,7 +77,7 @@ public class Teleplay_weibo extends Model<Teleplay_weibo> {
     /**
      * 是否删除 0 正常 ；1已删除
      */
-    private Integer isDeleted;
+    private Boolean isDeleted;
 
     /**
      * 记录修改时间戳

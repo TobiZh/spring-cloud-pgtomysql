@@ -25,7 +25,7 @@ public class Teleplay_baidutop extends Model<Teleplay_baidutop> {
     /**
      * 自增id
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**
