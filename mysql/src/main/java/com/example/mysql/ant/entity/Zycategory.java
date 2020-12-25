@@ -22,7 +22,7 @@ public class Zycategory extends Model<Zycategory> {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**
@@ -33,7 +33,7 @@ public class Zycategory extends Model<Zycategory> {
     /**
      * 是否删除 0 正常 ；1已删除
      */
-    private Integer isDeleted;
+    private Boolean isDeleted;
 
     /**
      * 记录修改时间戳

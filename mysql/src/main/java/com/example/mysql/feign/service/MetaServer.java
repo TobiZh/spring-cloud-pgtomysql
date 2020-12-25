@@ -3,6 +3,7 @@ package com.example.mysql.feign.service;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.mysql.ant.entity.Teleplay_prdhouse;
 import com.example.mysql.ant.entity.Teleplay_sotrend;
+import com.example.mysql.ant.entity.Zy_prdhouse;
 import com.example.mysql.entity.*;
 import com.example.mysql.result.Result;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -97,5 +98,34 @@ public interface MetaServer {
     @GetMapping("teleplay/teleplaysubject")
     List<Teleplaysubject> teleplaysubject();
     //======================== teleplay ================================
+
+    //======================== zy ================================
+    @GetMapping("zy")
+    List<Zy> zy();
+    @GetMapping("/zy/baidutop")
+    List<Zy_baidutop> zybaidutop();
+    @GetMapping("/zy/buluo")
+    List<Zy_buluo> zybuluo();
+    @GetMapping("/zy/douban")
+    List<Zy_douban> zydouban();
+    @GetMapping("/zy/huati")
+    List<Zy_huati> zyhuati();
+    @GetMapping("/zy/tieba")
+    List<Zy_tieba> zytieba();
+    @GetMapping("/zy/weibo")
+    List<Zy_weibo> zyweibo();
+    @GetMapping("/zy/person")
+    List<Zy_person> zyperson();
+    @GetMapping("/zy/prdhouse")
+    List<Meta_zy_prdhouse> zyprdhouse();
+    @GetMapping("/zy/site")
+    List<Zy_site> zysite();
+    @GetMapping("/zy/sotrend")
+    List<Meta_zy_sotrend> zysotrend();
+    @GetMapping("zy/zycategory")
+    List<Zycategory> zycategory();
+    @GetMapping("zy/zytype")
+    List<Zytype> zytype();
+    //======================== zy ================================
 
 }

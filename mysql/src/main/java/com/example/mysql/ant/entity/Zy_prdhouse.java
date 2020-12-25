@@ -25,7 +25,7 @@ public class Zy_prdhouse extends Model<Zy_prdhouse> {
     /**
      * 自增id
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**

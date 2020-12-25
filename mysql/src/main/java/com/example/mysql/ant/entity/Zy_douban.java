@@ -85,7 +85,7 @@ public class Zy_douban extends Model<Zy_douban> {
     /**
      * 是否删除 0 正常 ；1已删除
      */
-    private Integer isDeleted;
+    private Boolean isDeleted;
 
     /**
      * 记录修改时间戳

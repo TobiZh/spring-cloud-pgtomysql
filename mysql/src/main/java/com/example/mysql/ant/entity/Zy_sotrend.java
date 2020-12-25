@@ -23,7 +23,7 @@ public class Zy_sotrend extends Model<Zy_sotrend> {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     private String keyword;
@@ -34,7 +34,7 @@ public class Zy_sotrend extends Model<Zy_sotrend> {
 
     private Integer isDeleted;
 
-    private LocalDate created;
+    private LocalDateTime created;
 
     private LocalDateTime updated;
 

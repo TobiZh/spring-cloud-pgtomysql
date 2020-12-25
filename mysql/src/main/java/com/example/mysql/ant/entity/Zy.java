@@ -26,7 +26,7 @@ public class Zy extends Model<Zy> {
     /**
      * 主键,自增id
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**
@@ -52,7 +52,7 @@ public class Zy extends Model<Zy> {
     /**
      * 状态，拍摄，播出等
      */
-    private Integer status;
+    private Integer lifecycleId;
 
     /**
      * 综艺分类
@@ -72,14 +72,14 @@ public class Zy extends Model<Zy> {
     /**
      * 已启用,是否计算指数
      */
-    private Integer isEnabled;
+    private Boolean isEnabled;
 
     /**
      * 已编辑完整
      */
-    private Integer isComplete;
+    private Boolean isComplete;
 
-    private Integer isLock;
+    private Boolean isLock;
 
     /**
      * 是否删除 0 正常 ；1已删除

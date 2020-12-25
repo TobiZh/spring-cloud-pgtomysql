@@ -48,7 +48,7 @@ public class Zy_buluo extends Model<Zy_buluo> {
     /**
      * 是否删除 0 正常 ；1已删除
      */
-    private Integer isDeleted;
+    private Boolean isDeleted;
 
     /**
      * 记录修改时间戳

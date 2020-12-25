@@ -52,7 +52,7 @@ public class Zy_weibo extends Model<Zy_weibo> {
     /**
      * 需要登录后访问
      */
-    private Integer isLogin;
+    private Boolean isLogin;
 
     /**
      * 粉丝总数

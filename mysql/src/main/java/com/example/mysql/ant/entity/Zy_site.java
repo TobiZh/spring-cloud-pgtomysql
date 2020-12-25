@@ -25,7 +25,7 @@ public class Zy_site extends Model<Zy_site> {
     /**
      * 自增id
      */
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.INPUT)
     private Integer id;
 
     /**
